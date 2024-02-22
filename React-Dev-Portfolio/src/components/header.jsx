@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import { Container, Row, Col } from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap';
 
-export const Header = () => {
+export default  function Header() {
     return (<>
-    <Container fluid className='bg-dark'>
+    <Container className='bg-dark'>
         <Row className='justify-content-center text-center mb-0'>
             <Col className='pb-'>
                 <h1 className="text-black" style={{ fontSize: '70px'}}>
@@ -16,6 +16,7 @@ export const Header = () => {
             </Col>
         </Row>
     </Container>
+    
     </>)
 }
 

@@ -1,11 +1,18 @@
 import React from 'react';
-import { Header } from './components/header';
-import  'bootstrap/dist/css/bootstrap.min.css';
+import Header from './components/Header';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './style/App.css'
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
-return (<Header />
-
+    return (
+        <>
+        <BrowserRouter>
+            <Header />
+            </BrowserRouter>
+        </>
     )
 }
 
 export default App
+// usecontext react
