@@ -3,6 +3,7 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import InputGroup from 'react-bootstrap/InputGroup';
 import emailjs from '@emailjs/browser';
+import '../style/style.css';
 
 function Contact() {
     const form = useRef();
@@ -37,12 +38,7 @@ function Contact() {
             console.log('FAILED...', error.text);
           },
         );
-      
-    
-        
-         
-    
-    
+
         setUserFormData({
           from_name: '',
           email: '',
@@ -50,8 +46,8 @@ function Contact() {
         });
       };
     return (
-        <Form ref={form}>
-            <Form.Group className="mb-3" controlId="formBasicEmail">
+        <Form className="emailjs my-5"ref={form}>
+            <Form.Group controlId="formBasicEmail">
                 <Form.Label>Email address</Form.Label>
                 <Form.Control onChange={handleInputChange} name="email" value={userFormData.email} type="email" placeholder="Enter email" />
             </Form.Group>

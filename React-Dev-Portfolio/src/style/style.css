@@ -12,17 +12,37 @@ body {
 }
 .project-area {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+
+}
+#port-pic {
+width: 400px;
+height: 400px;
+border-radius: 50%;
+margin-top: 50px;
+margin-bottom: 50px;
+}
+#about {
+    font-weight: bold;
+}
+.emailjs {
+    width: 500px;
+    margin: auto 0;
+    
 }
 @media (min-width: 432px) {
     body{ 
-        background-size: auto 1000px;
-
+        background-size: auto 2000px;
     }
+    .project-area {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
 }
 @media (min-width: 1200px) {
     body{ 
-        background-size: 2000px 1000px;
+        background-size: 2000px 2000px;
 
     }
 }
