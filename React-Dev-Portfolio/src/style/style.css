@@ -27,12 +27,25 @@ margin-bottom: 50px;
 }
 .emailjs {
     width: 500px;
-    margin: auto 0;
-    
+    margin: auto;
+}
+#submit {
+   margin-top: 20px;
 }
 @media (min-width: 432px) {
     body{ 
-        background-size: auto 2000px;
+        background-size: auto 3000px;
+        
+    }
+    .project-area {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+@media (max-width: 431px) {
+    body{ 
+        background-size: auto 3000px;
     }
     .project-area {
         display: flex;
@@ -42,7 +55,7 @@ margin-bottom: 50px;
 }
 @media (min-width: 1200px) {
     body{ 
-        background-size: 2000px 2000px;
+        background-size: 1800px 3000px;
 
     }
 }

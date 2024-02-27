@@ -48,11 +48,11 @@ function Contact() {
     return (
         <Form className="emailjs my-5"ref={form}>
             <Form.Group controlId="formBasicEmail">
-                <Form.Label>Email address</Form.Label>
+                <Form.Label className="d-flex justify-content-center my-3">Email address</Form.Label>
                 <Form.Control onChange={handleInputChange} name="email" value={userFormData.email} type="email" placeholder="Enter email" />
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicName">
-                <Form.Label>Your Name</Form.Label>
+                <Form.Label className="d-flex justify-content-center my-2">Your Name</Form.Label>
                 <Form.Control onChange={handleInputChange} name="from_name" value={userFormData.from_name} type="text" />
             </Form.Group>
             
@@ -60,8 +60,8 @@ function Contact() {
                 <InputGroup.Text>Message</InputGroup.Text>
                 <Form.Control onChange={handleInputChange} name="message" value={userFormData.message} as="textarea" aria-label="With textarea" />
             </InputGroup>
-            <Button variant="primary" type="submit" onSubmit={handleFormSubmit}>
-                Submit
+            <Button id="submit"variant="primary" type="submit" onSubmit={handleFormSubmit}>
+                Contact Me
             </Button>
         </Form>
     );

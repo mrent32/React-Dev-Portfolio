@@ -12,7 +12,7 @@ function Intro() {
   const projects = [
     { id: 1, title: 'Gig-of-bands', description: `A full stack web application for artists and venues to connect with each
     other.`, gitlink: 'https://github.com/mrent32/gig-of-bands',
-     weblink: '', img: projectOnePic },
+     weblink: 'https://gig-of-bands-7544c49deaea.herokuapp.com/', img: projectOnePic },
     { id: 2, title: 'JS Frameworks Blog', description: `A full stack restful blog style application for users of 
     Javascript to discuss different libraries and frameworks that they enjoy.`, gitlink: 'https://github.com/mrent32/Tech-Blog',
      weblink: 'https://my-technical-blog-8e6c28eb0f9c.herokuapp.com/', img: projectTwoPic },
@@ -37,8 +37,8 @@ function Intro() {
               <div id="portfolio" key={id} >
                 <h3>{title}</h3>
                 <a href={weblink}><img id="picone" src={img}></img></a>
-                <a href={gitlink}>Github Repository</a>
-                <p>{description}</p>
+                <a className="d-flex justify-content-center my-2" href={gitlink}>Github Repository</a>
+                <p className="">{description}</p>
               </div>
             )
           })}
@@ -55,7 +55,7 @@ function Intro() {
             the MERN stack to create dynamic and responsive user interfaces while ensuring the integrity and security of the underlying data architecture.
             Committed to continuous learning and growth, I eagerly embrace new technologies and best practices to deliver innovative solutions.
             I am enthusiastic about the opportunity to contribute my skills and creativity to a forward-thinking team, where I can continue to thrive
-            and make meaningful contributions in the dynamic world of software development.
+            and make meaningful contributions in the dynamic world of software development. Below is a contact form to reach me for any inquiries. 
             </p>
             </Col>
 
