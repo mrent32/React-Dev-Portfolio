@@ -1,3 +1,28 @@
-Navtabs {
-    background-color: black;
+body {
+    background-image: url('../assets/react-background.jpeg');
+    background-repeat: no-repeat;
+    background-size: 500px;
+}
+#portfolio {
+    width: 250px;
+    display: inline-block;
+}
+#picone {
+    width: 250px;
+}
+.project-area {
+    display: flex;
+    justify-content: space-between;
+}
+@media (min-width: 432px) {
+    body{ 
+        background-size: auto 1000px;
+
+    }
+}
+@media (min-width: 1200px) {
+    body{ 
+        background-size: 2000px 1000px;
+
+    }
 }
