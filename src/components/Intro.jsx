@@ -7,6 +7,8 @@ import projectOnePic from '../assets/project-one.png';
 import projectTwoPic from '../assets/project-two.png'
 import portPic from '../assets/portfolio-pic.jpeg';
 import Contact from "./Contact";
+
+
 function Intro() {
   const [index, setIndex] = useState(0);
   const projects = [
@@ -24,9 +26,7 @@ function Intro() {
   };
   return (
     <>
-    <h1 className="text-4xl md:text-7xl mb-1
-     md:mb-3 font=bold d-flex justify-content-center
-      my-5">Martin Renteria</h1>
+
     <span className="d-flex justify-content-center my-3">
       <img id="port-pic" src={portPic}></img>
     </span>
