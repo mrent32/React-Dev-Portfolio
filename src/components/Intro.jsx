@@ -18,7 +18,7 @@ function Intro() {
     { id: 2, title: 'JS Frameworks Blog', description: `A full stack restful blog style application for users of 
     Javascript to discuss different libraries and frameworks that they enjoy.`, gitlink: 'https://github.com/mrent32/Tech-Blog',
      weblink: 'https://my-technical-blog-8e6c28eb0f9c.herokuapp.com/', img: projectTwoPic },
-    { id: 3, title: 'Project 3', description: '', gitlink: '', weblink: '', img: projectOnePic },
+    // { id: 3, title: 'Project 3', description: '', gitlink: '', weblink: '', img: projectOnePic },
 
   ]
   const handleSelect = (selectedIndex) => {
