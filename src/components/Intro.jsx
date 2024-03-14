@@ -7,6 +7,7 @@ import projectOnePic from '../assets/project-one.png';
 import projectTwoPic from '../assets/project-two.png'
 import portPic from '../assets/portfolio-pic.jpeg';
 import Contact from "./Contact";
+import neighborNest from '../assets/Neighbor-Nest.png';
 
 
 function Intro() {
@@ -18,7 +19,8 @@ function Intro() {
     { id: 2, title: 'JS Frameworks Blog', description: `A full stack restful blog style application for users of 
     Javascript to discuss different libraries and frameworks that they enjoy.`, gitlink: 'https://github.com/mrent32/Tech-Blog',
      weblink: 'https://my-technical-blog-8e6c28eb0f9c.herokuapp.com/', img: projectTwoPic },
-    // { id: 3, title: 'Project 3', description: '', gitlink: '', weblink: '', img: projectOnePic },
+    { id: 3, title: 'Neighbor-Nest', description: `A local consumer to consumer e-commerce platform for buying and selling used goods`,
+     gitlink: 'https://github.com/mrent32/Neighbor-Nest', weblink: 'https://neighbor-nest.onrender.com/', img: neighborNest },
 
   ]
   const handleSelect = (selectedIndex) => {
@@ -27,7 +29,7 @@ function Intro() {
   return (
     <>
 
-    <span className="d-flex justify-content-center my-3">
+    <span className="d-flex justify-content-center my-3"id="port" >
       <img id="port-pic" src={portPic}></img>
     </span>
       <div className="d-flex  justify-space-around w-100 my-2 ">
